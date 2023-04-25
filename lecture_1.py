@@ -88,3 +88,14 @@ col = int(input('Enter number of col: '))
 print(*remove_col_row(row, col, matrix), sep='\n')
 
 # 2
+def bubble_sort(arr):
+    for i in range(len(arr) - 1):
+        for j in range(i, len(arr)):
+            if arr[i] > arr[i + 1]:
+                swap = arr[i]
+                arr[i] = arr[i + 1]
+                arr[i + 1] = swap
+    return arr
+
+
+
