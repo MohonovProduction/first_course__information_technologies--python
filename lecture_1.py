@@ -6,7 +6,7 @@ second_degrees = list()
 for i in range(1, 20):
     second_degrees.append(2 ** i)
 
-# print(second_degrees)
+print(second_degrees)
 
 
 # Task 2
@@ -18,8 +18,7 @@ for i in range(1, 10):
 
 print(div_5)
 div_5.reverse()
-
-#print(div_5)
+print(div_5)
 
 
 # Task 3
@@ -48,5 +47,21 @@ print(odd_numbers + even_numbers)
 
 
 # Task 4
+
+import random
+
+random_numbers = list()
+
+for i in range(1, 11):
+    random_numbers.append(random.randint(0, 4096))
+
+for i in range(0, len(random_numbers) * 2 - 2, 2):
+    el1 = random_numbers[i]
+    el2 = random_numbers[i+1]
+    sum = el1 + el2
+    random_numbers.insert(i+1, sum)
+
+print(random_numbers)
+
 
 # Task 5 (Homework)
