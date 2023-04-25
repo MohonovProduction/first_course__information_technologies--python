@@ -50,4 +50,16 @@ print(numbers)
 
 # Task 5
 
+text = input('Enter the text: ')
+
+letters = dict()
+
+for i in text:
+    if i in letters.keys():
+        letters[i] += 1
+    else:
+        letters[i] = 1
+
+print(letters)
+
 # Task 6
