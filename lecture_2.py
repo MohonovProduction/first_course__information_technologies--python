@@ -30,9 +30,23 @@ print(figures)
 
 # Task 3
 
+numbers = set()
 
+for i in range(50 + 1):
+    if (i % 4 == 0) != (i % 3 == 0):
+        numbers.add(i)
+
+print(numbers)
 
 # Task 4
+
+numbers = set()
+
+for i in range(1, 100, 4):
+    numbers.add((i, i+2))
+
+print(numbers)
+
 
 # Task 5
 
