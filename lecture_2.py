@@ -63,3 +63,20 @@ for i in text:
 print(letters)
 
 # Task 6
+
+# 1
+
+text = input('Enter text: ')
+
+vowels = 'АИОУЫЭAEIOUYаиоуыэaeiouy'
+
+texts_vowels = set()
+
+for i in text:
+    if i in vowels:
+        texts_vowels.add(i)
+
+print(texts_vowels)
+
+# 2
+
