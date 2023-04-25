@@ -19,10 +19,33 @@ for i in range(1, 10):
 print(div_5)
 div_5.reverse()
 
-print(div_5)
+#print(div_5)
 
 
 # Task 3
+
+import random
+
+random_numbers = list()
+
+for i in range(1, 11):
+    random_numbers.append(random.randint(0, 4096))
+
+def odd(a):
+    if a == 0: return False
+    else: return a % 2 == 0
+
+def even(a):
+    return not odd(a)
+
+odd_numbers = list(filter(odd, random_numbers))
+even_numbers = list(filter(even, random_numbers))
+
+odd_numbers.sort()
+even_numbers.sort(reverse=True)
+
+print(odd_numbers + even_numbers)
+
 
 # Task 4
 
