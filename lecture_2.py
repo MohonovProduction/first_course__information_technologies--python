@@ -62,7 +62,7 @@ for i in text:
 
 print(letters)
 
-# Task 6
+# Task 6 (Homework)
 
 # 1
 
@@ -78,5 +78,22 @@ for i in text:
 
 print(texts_vowels)
 
+
 # 2
+
+def concat_disct(dict1, dict2):
+    dict3 = dict()
+    for i in dict1:
+        dict3[i] = set()
+        dict3[i].add(dict1[i])
+    for i in dict2:
+        if i in dict3:
+            dict3[i].add(dict2[i])
+        else:
+            dict3[i] = set()
+            dict3[i].add(dict2[i])
+    return dict3
+
+print(concat_disct(dict1, dict2))
+
 
