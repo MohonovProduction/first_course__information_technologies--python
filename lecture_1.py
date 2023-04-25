@@ -65,3 +65,26 @@ print(random_numbers)
 
 
 # Task 5 (Homework)
+# 1
+
+import random
+
+matrix = list()
+
+for i in range(10):
+    matrix.append(list())
+    for j in range(10):
+        matrix[i].append(random.randint(0, 4096))
+
+def remove_col_row(row, col, matrix):
+    matrix.pop(row)
+    for i in range(len(matrix)):
+        matrix[i].pop(col)
+    return matrix
+
+row = int(input('Enter number of row: '))
+col = int(input('Enter number of col: '))
+
+print(*remove_col_row(row, col, matrix), sep='\n')
+
+# 2
